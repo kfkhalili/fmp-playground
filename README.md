@@ -1,4 +1,4 @@
-# Khalid's FMP Insights
+# FMP Playground
 
 ## Project Setup
 
@@ -12,12 +12,12 @@ brew install poetry
 2. Install dependencies
 
 ```bash
-poetry install --no-root
-poetry run python setup.py setup_mongo
+poetry install
+poetry run setup-mongo
 ```
 
 3. Run Project
 
 ```bash
-poetry run python run.py
+poetry run fmp-playground
 ```
