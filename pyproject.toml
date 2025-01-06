@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "fmp-playground"
+version = "0.1.0"
+description = ""
+authors = ["Khalid Alkhalili <kfkhalili@hotmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+pandas = "^2.2.3"
+fmpsdk = "^20250102.0"
+pymongo = "^4.10.1"
+setuptools = "^75.7.0"
+python-dotenv = "^1.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+setup-mongo = "tools.setup_mongo:main"
+fmp-playground = "fmp_playground.main:main"
